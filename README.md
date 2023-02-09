@@ -7,8 +7,18 @@
 ```bash
 yarn
 
-yarn start
+yarn dev
 ```
+
+### script
+
+#### yarn test
+
+```bash
+yarn jest --watchAll
+```
+
+`--watchAll` : 현재 상태를 추적하여 테스트 코드에 변동이 있을 때마다 자동으로 테스트 실행
 
 ## 기술스택
 

@@ -13,8 +13,7 @@ describe("<App /> test", () => {
     const utils = render(<App />);
 
     const h2 = utils.container.querySelector("h2"); // h2태그 DOM 가져오기
-    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
-    h2 && expect(h2.innerHTML).toBe("Hello. Jest!!"); // h2의 innerHTML이 Hello, Jest!! 인지 테스트
+    expect(h2?.innerHTML).toBe("Hello. Jest!!"); // h2의 innerHTML이 Hello, Jest!! 인지 테스트
   });
 
   it("button test", () => {
